@@ -1,0 +1,140 @@
+.desktop4 {
+    display: flex;
+}
+.desktop4__logo {
+    position: absolute;
+    width: 141px;
+    height: 61px;
+    left: 100px;
+    top: 35px;
+
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 61px;
+    /* identical to box height */
+
+color: #00303F;
+}
+.desktop4__title {
+    position: absolute;
+    width: 269px;
+    height: 116px;
+    left: 156px;
+    top: 96px;
+
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 86px;
+    line-height: 116px;
+
+    color: #000000;
+}
+.desktop4__price {
+    position: absolute;
+    width: 75px;
+    height: 44px;
+    left: 159px;
+    top: 205px;
+
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+
+    color: #00303F; 
+}
+.desktop4__price span { 
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 87px;  
+    color: #000000;
+}
+.desktop4__user {
+    position: absolute;
+    width: 300px;
+    height: 44px;
+    left: 159px;
+    top: 450px;
+
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #00303F;
+}
+.desktop4__user span {
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 78px;
+    color:black;
+}
+.desktop4__time {
+    position: absolute;
+    width: 307px;
+    height: 44px;
+    left: 159px;
+    top: 650px;
+}
+.desktop4__time p {
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    color: #00303F;
+}
+.desktop4__time span {
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 78px;
+}
+.desktop4__payment__code {
+    position: absolute;
+    width: 460px;
+    height: 460px;
+    left: 826px;
+    top: 130px;
+
+    background: #555555;
+    opacity: 0.15;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+}
+.service1 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 912px;
+    top: 604px;
+
+    background: #555555;
+    opacity: 0.15;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+}
+.service2 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 1080px;
+    top: 604px;
+
+    background: #555555;
+    opacity: 0.15;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+}

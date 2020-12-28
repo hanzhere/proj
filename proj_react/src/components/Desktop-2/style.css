@@ -1,0 +1,25 @@
+.desktop2 .title{
+    position: absolute;
+    width: 398px;
+    height: 44px;
+    left: 466px;
+    top: 89px;
+
+    font-family: Product Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.desktop2 .cam {
+    position: absolute;
+    width: 605px;
+    height: 605px;
+    left: 417px;
+    top: 138px;
+    
+    border-radius: 60px;
+}
