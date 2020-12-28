@@ -99,3 +99,12 @@
     
     color: #CDAC81;
 }
+.desktop3__check-list__product {
+    width: 280px;
+    height: 80px;
+    left: 1060px;   
+    
+
+    background: red;
+    border-radius: 28px;
+}

@@ -13,12 +13,8 @@ export default function Desktop3(props) {
   const [products, setProducts] = useState([]);
   // webcam declare
 
-  var mockData = {
-      'banana': 0,
-      'cell phone': 0,
-      'bottle': 0,
-      'orange': 0
-  }
+  var mockData = [];
+
   var myVar;
 
   useEffect(() => {
@@ -38,17 +34,26 @@ export default function Desktop3(props) {
     const imageSrc = webcamRef.current.getScreenshot();
 
     if (imageSrc) {
-    //   console.log(imageSrc.slice(23));
+      //   console.log(imageSrc.slice(23));
       axios
         .post("http://192.168.0.103:6868/detect", {
           products: imageSrc.slice(23),
         })
         .then((res) => {
-            for (let product of res.data) {
-                if (product in mockData) {
-                    mockData[product] = product;
-                }
-            }
+          console.log(res.data);
+          mockData = [];
+          for (let product in res.data) {
+            // const i = mockData.indexOf(JSON.parse(`{"${product}": ${res.data[product]}}`))
+            // console.log('i: ', i);
+            // if ( i == -1) {
+            let obj = `{"name": ${product}, "count": ${res.data[product]}}`;
+            mockData.push(JSON.parse(obj));
+
+            console.log(mockData);
+            // }
+          }
+
+          // console.log(mockData[0]);
         });
     }
   }, [webcamRef]);
@@ -57,7 +62,7 @@ export default function Desktop3(props) {
     <div className="desktop3">
       <div className="desktop3__scan">
         <div className="desktop3__title">
-        👋 Hello, <span>{userName}</span>
+          👋 Hello, <span>{userName}</span>
         </div>
         {/* <div className="desktop3__cam"></div> */}
         <Webcam
@@ -71,7 +76,12 @@ export default function Desktop3(props) {
       <div className="desktop3__check-list">
         <div className="desktop3__check-list__title">Your cart</div>
         <div className="desktop3__check-list__products">
-          {/* There are something in this className */}
+          <div className="desktop3__check-list__product">
+            <div className="desktop3__check-list__product__img">Image</div>
+            <div className="desktop3__check-list__product__info">
+              {/* {mockData[0].name} */}
+            </div>
+          </div>
         </div>
         <div className="desktop3__check-list__price">
           <div>Total</div>
