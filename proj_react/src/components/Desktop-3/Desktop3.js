@@ -186,7 +186,7 @@ export default function Desktop3(props) {
               videoConstraints={videoConstraints}
             />
           </div>
-          <div className="desktop3__check-list">
+          {/* <div className="desktop3__check-list">
             <div className="desktop3__check-list__title">Your cart</div>
             <div className="desktop3__check-list__products">
               <div className="desktop3__check-list__product">
@@ -201,14 +201,18 @@ export default function Desktop3(props) {
               </div>
             </div>
             <div className="desktop3__check-list__price">
-              <div>Total</div>
-              <div>{totalPrice}</div>
-            </div>
-            <button className="desktop3__check-list__button-payment">
+              
+            </div> */}
+
+          {/* <button className="desktop3__check-list__button-payment">
               Payment
-            </button>
+            </button> */}
+          <div className="desktop3__check-list__price">
+            <div>Total</div>
+            <div>{totalPrice}</div>
           </div>
         </div>
+        //</iv>d
       )}
     </>
   );

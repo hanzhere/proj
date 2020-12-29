@@ -67,15 +67,15 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    width: 250px;
+    width: 350px;
     height: 30px;
-    right: 80px;
-    top: 620px;
+    right: 60px;
+    top: 100px;
 
     font-family: Product Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 64px;
     line-height: 30px;
 
     color: #00303F;

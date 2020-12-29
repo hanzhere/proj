@@ -25,7 +25,7 @@ export default function Desktop2(props) {
         user_name: userName,
         is_login: true,
         is_payment: false,
-        total_price: 0
+        total_price: 0,
       })
       .then(setIsLogin(true));
   };
@@ -46,17 +46,19 @@ export default function Desktop2(props) {
   };
   return (
     <>
-      {!isLogin ? (
+      {isLogin ? (
         <div className="desktop2">
           <div className="title">Scan your QR Code</div>
-          <QrReader
-            className="cam"
-            onError={handleError}
-            onScan={handleScan}
-          />
+          <div className="cam-border">
+            <QrReader
+              className="cam"
+              onError={handleError}
+              onScan={handleScan}
+            />
+          </div>
         </div>
       ) : (
-        <Desktop3 userName={userName} userId={userId.toString()}/>
+        <Desktop3 userName={userName} userId={userId.toString()} />
       )}
     </>
   );

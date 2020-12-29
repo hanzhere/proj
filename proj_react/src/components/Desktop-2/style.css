@@ -17,10 +17,12 @@
 .desktop2 .cam {
     position: absolute;
     width: 505px;
-    height: 505px;
+    height: 805px;
     left: 480px;
     top: 138px;
+
     
-    background-color: red;
-    border-radius: 60px;
+}
+.cam-border {
+    
 }
