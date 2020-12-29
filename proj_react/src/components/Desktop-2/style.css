@@ -16,10 +16,11 @@
 }
 .desktop2 .cam {
     position: absolute;
-    width: 605px;
-    height: 605px;
-    left: 417px;
+    width: 505px;
+    height: 505px;
+    left: 480px;
     top: 138px;
     
+    background-color: red;
     border-radius: 60px;
 }

@@ -15,7 +15,7 @@ export default function Desktop2(props) {
 
   //   console.log(setIsLogin);
 
-  const [userData, setUserData] = useState("");
+  const [userId, setUserId] = useState("");
   const [userName, setUserName] = useState("");
 
   const createNewBranch = (userId, userName) => {
@@ -32,6 +32,7 @@ export default function Desktop2(props) {
 
   const handleScan = (data) => {
     if (data != null) {
+      setUserId(data);
       //   setUserData(data);
       db.ref("user/" + data).on("value", (snapshot) => {
         setUserName(snapshot.val().name);
@@ -45,18 +46,17 @@ export default function Desktop2(props) {
   };
   return (
     <>
-      {isLogin ? (
+      {!isLogin ? (
         <div className="desktop2">
           <div className="title">Scan your QR Code</div>
           <QrReader
             className="cam"
-            delay={10}
             onError={handleError}
             onScan={handleScan}
           />
         </div>
       ) : (
-        <Desktop3 userName={userName}/>
+        <Desktop3 userName={userName} userId={userId.toString()}/>
       )}
     </>
   );
